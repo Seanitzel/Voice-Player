@@ -1,6 +1,7 @@
 package com.example.seanitzel.bloop;
 
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
@@ -60,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
             btns[i] = (Button) findViewById(BUTTON_IDS[i]);
             btns[i].setBackgroundColor(0xFFFF0000);
             btns[i].setText(BUTTON_LABELS[i]);
+            btns[i].setAllCaps(false);
+            btns[i].setTypeface(Typeface.SANS_SERIF);
             btns[i].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
